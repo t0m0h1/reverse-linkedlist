@@ -14,6 +14,12 @@ def reverseList(head):
         prev = temp
     return prev
 
+def printList(head):
+    while head:
+        print(head.val)
+        head = head.next
+
+
 
 if __name__ == "__main__":
     head = ListNode(1)
@@ -27,4 +33,5 @@ if __name__ == "__main__":
     head.next.next.next.next.next.next.next.next = ListNode(9)
     head.next.next.next.next.next.next.next.next.next = ListNode(10)
     reversed_head = reverseList(head)
+    printList(reversed_head)
     print(reversed_head.val)
